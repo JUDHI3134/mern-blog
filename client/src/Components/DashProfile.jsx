@@ -19,7 +19,7 @@ function DashProfile() {
     const [formData,setFormData] = useState({})
     const [updateUserSuccess,setUpdateUserSuccess] = useState(null)
     const [updateUserError,setUpdateUserError] = useState(null)
-    const [shoeModal,setShowModal] = useState(false)
+    const [showModal,setShowModal] = useState(false)
     const filepickerRef = useRef();
     const dispatch = useDispatch();
     const handleImageChange = (e) =>{
@@ -217,7 +217,7 @@ function DashProfile() {
         </Alert>
       )}
 
-      <Modal show={shoeModal} onClose={()=>setShowModal(false)} popup size='md'>
+      <Modal show={showModal} onClose={()=>setShowModal(false)} popup size='md'>
        <Modal.Header/>
        <Modal.Body>
           <div className="text-center">
