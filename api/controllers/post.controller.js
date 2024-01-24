@@ -8,12 +8,12 @@ export const create = async (req,res,next)=>{
     if(!req.body.title || !req.body.content){
         return next(errorHandler(403,'Please provide all required fields'))
     }
-    const slug = req.body.title.split(' ').json('_').toLowerCase().replace(/[^a-zA-Z0-9-]/g,'_');
+    const slug = req.body.title.split(' ').join('_').toLowerCase().replace(/[^a-zA-Z0-9-]/g,' ');
 
     const newPost = new Post({
         ...req.body,
         slug,
-        userId: req.body.user,
+        userId: req.user.id,
     });
 
     try {
