@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import CallToAction from '../components/CallToAction';
+import CallToAction from '../Components/CallToAction';
 import { useEffect, useState } from 'react';
-import PostCard from '../components/PostCard';
+import PostCard from '../Components/PostCard';
 
 const Home = () => {
 
