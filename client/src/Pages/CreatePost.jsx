@@ -91,7 +91,7 @@ function CreatePost() {
             <option value="javascript">Javascript</option>
             <option value="html">HTML</option>
             <option value="css">CSS</option>
-            <option value="react">React</option>
+            <option value="reactjs">React.js</option>
             <option value="nextjs">Next.Js</option>
            </Select>
          </div>
